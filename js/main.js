@@ -14,7 +14,7 @@ btn.addEventListener('click', () => {
     obtenerDatosPelis(input.value)
 })
 function obtenerDatosPelis(peli) {
-    fetch(`http://www.omdbapi.com/?t=${peli}&apikey=${yourkey}&`)
+    fetch(`https://www.omdbapi.com/?t=${peli}&apikey=${yourkey}&`)
 
     .then(response => response.json())
     .then(data => {
