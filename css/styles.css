@@ -1,0 +1,29 @@
+#detallePeli{
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.748);
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 17%;
+    left: 5%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2)
+}
+
+img{
+    max-width: 100%;
+}
+
+.footer{
+    position: none;
+    top: 100%;
+}
+
+.fixed-top{
+    position: initial !important;
+}
+
+.tuto {
+    position: absolute;
+    margin: 33%;
+    top: 10%;
+}

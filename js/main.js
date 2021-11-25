@@ -1,12 +1,12 @@
 
 const yourkey = '612689dd'
 const d = document
-const datoLS = JSON.parse(localStorage.getItem('peliRecibido'))
+/*const datoLS = JSON.parse(localStorage.getItem('peliRecibido'))
 
     if(datoLS != null){
         mostraDatos(datoLS)
     }
-
+*/
 const btn = d.getElementById("buscarBtn")
 
 btn.addEventListener('click', () => {
@@ -14,7 +14,7 @@ btn.addEventListener('click', () => {
     obtenerDatosPelis(input.value)
 })
 function obtenerDatosPelis(peli) {
-    fetch(`http://www.omdbapi.com/?t=${peli}&apikey=${yourkey}&`)
+    fetch(`https://www.omdbapi.com/?t=${peli}&apikey=${yourkey}&`)
 
     .then(response => response.json())
     .then(data => {
@@ -59,6 +59,6 @@ function mostraDatos(data){
 
 }
 
-function guardarUltBusqueda(data){
+/*function guardarUltBusqueda(data){
     localStorage.setItem( 'peliRecibido', JSON.stringify(data))
-}
+}*/
