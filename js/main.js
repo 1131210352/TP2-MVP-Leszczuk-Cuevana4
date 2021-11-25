@@ -9,7 +9,8 @@ const d = document
 */
 const btn = d.getElementById("buscarBtn")
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', (event) => {
+    event.preventDefault()
     let input = d.getElementById('buscar')
     obtenerDatosPelis(input.value)
 })
