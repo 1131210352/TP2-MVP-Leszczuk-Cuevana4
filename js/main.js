@@ -21,7 +21,7 @@ function obtenerDatosPelis(peli) {
     .then(data => {
         limpiarPantalla()
         mostraDatos(data)
-        guardarUltBusqueda(data)
+        /*guardarUltBusqueda(data)*/
         console.log(data)
     })
     
