@@ -1,14 +1,14 @@
 
 const yourkey = '612689dd'
 const d = document
-/*const datoLS = JSON.parse(localStorage.getItem('peliRecibido'))
+const datoLS = JSON.parse(localStorage.getItem('peliRecibido'))
 
     if(datoLS != null){
         mostraDatos(datoLS)
     }
-*/
-const btn = d.getElementById("buscarBtn")
 
+const btn = d.getElementById("buscarBtn")
+pelisDestacadas()
 btn.addEventListener('click', (event) => {
     event.preventDefault()
     let input = d.getElementById('buscar')
@@ -19,10 +19,12 @@ function obtenerDatosPelis(peli) {
 
     .then(response => response.json())
     .then(data => {
+
         limpiarPantalla()
         mostraDatos(data)
         /*guardarUltBusqueda(data)*/
         console.log(data)
+        return data
     })
     
     .catch(err=>console.log(err))
@@ -59,6 +61,14 @@ function mostraDatos(data){
 
 }
 
-/*function guardarUltBusqueda(data){
+function pelisDestacadas(){
+    
+    var movie= obtenerDatosPelis("friends")
+    
+
+    console.log(movie)
+}
+
+function guardarUltBusqueda(data){
     localStorage.setItem( 'peliRecibido', JSON.stringify(data))
-}*/
+}
