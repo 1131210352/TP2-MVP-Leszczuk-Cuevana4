@@ -14,7 +14,7 @@ btn.addEventListener('click', () => {
     obtenerDatosPelis(input.value)
 })
 function obtenerDatosPelis(peli) {
-    fetch(`http://www.omdbapi.com/?t=${peli}&apikey=${yourkey}&`)
+    fetch(`https://www.omdbapi.com/?t=${peli}&apikey=${yourkey}&`)
 
     .then(response => response.json())
     .then(data => {
@@ -46,16 +46,15 @@ function mostraDatos(data){
         let sinopsis = d.createElement('p');
         let punt = d.createElement('p');
         
-        div.appendChild(h2); 
         div.appendChild(img);
+        div.appendChild(h2); 
         div.appendChild(punt);
         div.appendChild(sinopsis);
         div_global.appendChild(div);
-
-        h2.innerHTML = ` ${data.Title}`;
         img.src= `${data.Poster}`;
+        h2.innerHTML = ` ${data.Title}`;
         punt.innerHTML =`${data.Ratings[0].Value} ✪`;
-        sinopsis.innerHTML = `${data.Plot}`;
+        sinopsis.innerHTML = `Sinopsis <br> ${data.Plot}`;
 
 }
 

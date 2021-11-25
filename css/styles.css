@@ -1,0 +1,19 @@
+#detallePeli{
+    width: 90%;
+    background-color: rgba(128, 128, 128, 0.748);
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+img{
+    max-width: 100%;
+}
+
+.footer{
+    position: none;
+    top: 100%;
+}
