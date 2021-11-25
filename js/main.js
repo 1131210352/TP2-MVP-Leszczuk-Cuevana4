@@ -40,7 +40,7 @@ function limpiarPantalla(){
 function mostraDatos(data){
     let div_global = d.getElementById('divPelis');
         let div = d.createElement('div');
-        div.setAttribute('id', 'detallePeli' ) 
+        div.setAttribute('id', 'detallePeli'); 
         let h2 = d.createElement('h2');
         let img = d.createElement('img');
         let sinopsis = d.createElement('p');
