@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 body{
     background-color: #2d00f72c;
+}
+
+h1{
+    font-family: 'Nosifer', cursive;
 }
 h2{
     font-family: 'Abril Fatface', cursive;
