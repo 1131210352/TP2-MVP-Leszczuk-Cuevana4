@@ -8,7 +8,7 @@ const datoLS = JSON.parse(localStorage.getItem('peliRecibido'))
     }
 
 const btn = d.getElementById("buscarBtn")
-pelisDestacadas()
+
 btn.addEventListener('click', (event) => {
     event.preventDefault()
     let input = d.getElementById('buscar')
@@ -22,10 +22,9 @@ function obtenerDatosPelis(peli) {
 
         limpiarPantalla()
         mostraDatos(data)
-        /*guardarUltBusqueda(data)*/
+        guardarUltBusqueda(data)
         console.log(data)
-        return data
-    })
+        })
     
     .catch(err=>console.log(err))
 
@@ -61,13 +60,13 @@ function mostraDatos(data){
 
 }
 
-function pelisDestacadas(){
+/*function pelisDestacadas(){
     
     var movie= obtenerDatosPelis("friends")
     
 
     console.log(movie)
-}
+}*/
 
 function guardarUltBusqueda(data){
     localStorage.setItem( 'peliRecibido', JSON.stringify(data))

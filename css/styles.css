@@ -13,17 +13,15 @@ img{
     max-width: 100%;
 }
 
-.footer{
-    position: none;
-    top: 100%;
-}
 
-.fixed-top{
-    position: initial !important;
-}
 
 .tuto {
     position: absolute;
     margin: 33%;
     top: 10%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
 }
