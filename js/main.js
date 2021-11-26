@@ -46,7 +46,9 @@ function mostraDatos(data){
         let h2 = d.createElement('h2');
         let img = d.createElement('img');
         let sinopsis = d.createElement('p');
+        sinopsis.setAttribute('id', 'sinopsis');
         let punt = d.createElement('p');
+        punt.setAttribute('id', 'puntuacion');
         
         div.appendChild(img);
         div.appendChild(h2); 
@@ -56,7 +58,7 @@ function mostraDatos(data){
         img.src= `${data.Poster}`;
         h2.innerHTML = ` ${data.Title}`;
         punt.innerHTML =`${data.Ratings[0].Value} ✪`;
-        sinopsis.innerHTML = `Sinopsis <br> ${data.Plot}`;
+        sinopsis.innerHTML = `<span id="spanSinopsis">Sinopsis</span> <br> ${data.Plot}`;
 
 }
 

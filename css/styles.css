@@ -1,19 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body{
+    background-color: #2d00f72c;
+}
+h2{
+    font-family: 'Abril Fatface', cursive;
+    color: #2d00f7;
+}
+
+#spanSinopsis{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.5em;
+}
+
+#puntuacion{
+    color: gold;
+    font-size: 1.4em;
+    font-family: 'Abril Fatface', cursive;
+    -webkit-text-stroke: 0.8px grey;
+}
 #detallePeli{
     width: 90%;
-    background-color: rgba(128, 128, 128, 0.748);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 20px;
-    position: absolute;
-    top: 17%;
-    left: 5%;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2)
+    box-shadow: 6px 0 5px 1px rgba(0, 0, 0, 0.6);
+    margin-top: 14vh;
+    margin-left: 5%;
+    padding: 1em ;
 }
 
 img{
     max-width: 100%;
 }
 
+.footer{
+    position: none;
+    top: 100%;
+}
 
+.fixed-top{
+    position: initial !important;
+}
 
 .tuto {
     position: absolute;
@@ -21,7 +49,16 @@ img{
     top: 10%;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
+@media screen and (min-width: 800px) {
+
+    #detallePeli{
+        width: 50%;
+        /*background-color: rgb(255, 255, 255);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 6px 0 5px 1px rgba(0, 0, 0, 0.6);
+        margin-top: 14vh;*/
+        margin-left: 25%;
+        padding: 1em ;
+    }
 }
