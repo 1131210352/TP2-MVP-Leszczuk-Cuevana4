@@ -44,11 +44,18 @@ img{
 }
 
 .tuto {
-    position: absolute;
-    margin: 33%;
-    top: 7%;
+    position: revert;
+    margin: 10%;
 }
 
+#buscarBtn {
+    position: absolute;
+    right: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: 2em;
+    color: blue;
+}
 @media screen and (min-width: 800px) {
 
     #detallePeli{
