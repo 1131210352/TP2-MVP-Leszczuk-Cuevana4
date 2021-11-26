@@ -36,6 +36,7 @@ img{
 .footer{
     position: none;
     top: 100%;
+    height: 10%;
 }
 
 .fixed-top{
