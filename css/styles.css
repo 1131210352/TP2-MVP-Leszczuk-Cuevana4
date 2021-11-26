@@ -59,6 +59,61 @@ img{
     font-size: 2.5em;
     color: blue;
 }
+
+.video {
+    position: relative;
+    padding-bottom: 25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    }
+    
+    .video iframe,
+    .video object,
+    .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+.contvideo{
+    width: 90%;
+    margin: 4%;
+}
+#idFooter{
+    display: -webkit-box;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+#home {
+    position: absolute;
+    left: 0;
+    width: 33.33%;
+    font-size: 2em;
+    border-right: solid;
+}
+
+#fav {
+    position: absolute;
+    left: 33%;
+    width: 33.33%;
+    font-size: 2em;
+    border-right: solid;
+}
+
+#trailer{
+    position:absolute;
+    right: 0;
+    width: 33.33%;
+    font-size: 2em;
+}
 @media screen and (min-width: 800px) {
 
     #detallePeli{
