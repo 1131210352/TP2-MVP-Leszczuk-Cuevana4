@@ -44,15 +44,19 @@ img{
 
 .tuto {
     position: revert;
-    margin: 10%;
+    margin: 3% 5%;
 }
 
+#buscar{
+    width: 100%;
+    margin-top: 1%;
+}
 #buscarBtn {
     position: absolute;
-    right: 1.5em;
+    right: 7%;
     border: 0;
     background-color: transparent;
-    font-size: 2em;
+    font-size: 2.5em;
     color: blue;
 }
 @media screen and (min-width: 800px) {
