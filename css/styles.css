@@ -114,6 +114,10 @@ li {
     width: 33.33%;
     font-size: 2em;
 }
+
+.footerTP{
+    display: none;
+}
 @media screen and (min-width: 800px) {
 
     #detallePeli{
@@ -125,5 +129,14 @@ li {
         margin-top: 14vh;*/
         margin-left: 25%;
         padding: 1em ;
+    }
+
+    .footerM{
+        display: none;
+    }
+
+    .footerTP{
+        display: block;
+        text-align: center;
     }
 }
